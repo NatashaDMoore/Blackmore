@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>About Jacqueline</title>
+  <meta name="description" content="Seattle-based massage therapist trained in trauma work and bodywork.">
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ </head>
+ <body>
+    <header>
+    <a href="index.html" aria-labelledby="home"><h1 class="mobile">Jacqueline<br>Blackmore, LMT</h1></a>
+    <h1 class="desktop">Jacqueline Blackmore, LMT</h1>
+    <nav class="topnav" id="myTopnav">
+        <a class="about active" href="about.html">about</a>
+        <a class="home" href="index.html">home</a>
+        <a class="services" href="services.html">services</a>
+        <a class="work-together" href="work_together.html">working together</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    </header>
+    <div class="wrapper">
+        <h2 class="subheader">About Jacqueline</h2>
+        <div class="box">
+            <img class="mobile headshot" src="images/JB_headshot_mobile.jpg" alt="Photo of jacqueline Blackmore">
+            <img class="desktop headshot" src="images/JB_headshot.jpg" alt="Photo of jacqueline Blackmore">
+            <h3 class="sub">Licensed Massage Therapist</h3>
+            <h4>MA61214900</h4>
+            <div><p>Jacqueline (she/her) has felt called to massage her whole life. She wakes up every day excited to create space for people to heal, whether that's on the massage table, in an honest open conversation with a friend, or hosting events for people to express themselves fully.</p><p>Jacqueline's massage style is for those looking to slow down and come back into their body. She loves working with first time massage clients and opening people up to the incredible and diverse world of body work.</p><p>She takes special interest in working with clients recovering from trauma and substance use. She meets every client where they're at and treats each appointment as sacred.</p>
+            </div>
+            <div class="center">
+                <a href="contact.html" class="button">BOOK NOW</a>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <span><small>&copy; 2022 by 
+            <a href="">Natasha Moore</a>, All Rights Reserved
+        </span>
+     </footer>
+
+      <!-- "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+  </script>
+
+ </body>
+ </html>

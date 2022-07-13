@@ -1,0 +1,56 @@
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type=email] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+optgroup {
+    font-size: 40px;
+}
+
+select#department-selection {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea#message {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+button[type=submit] {
+    padding:5px 15px; 
+    background:rgba(251, 201, 101, 0.59); 
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    line-height: 2em;
+    font-size: 1em;
+    will-change: transform,opacity;
+}
+
+.container {
+    margin: 20px 30px;
+}

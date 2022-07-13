@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Book Appointment</title>
+  <meta name="description" content="Seattle-based massage therapist trained in trauma work and bodywork.">
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+ </head>
+ <body>
+    <header>
+    <a href="index.html" aria-labelledby="home"><h1 class="mobile">Jacqueline<br>Blackmore, LMT</h1></a>
+    <h1 class="desktop">Jacqueline Blackmore, LMT</h1>
+    <nav class="topnav" id="myTopnav">
+        <a class="contact active" href="contact.html">contact</a>
+        <a class="services " href="services.html">services</a>
+        <a class="work-together" href="work_together.html">working together</a>
+        <a class="about" href="about.html">about</a>
+        <a class="home" href="index.html">home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    </header>
+        <div class="wrapper">
+            <h2>Contact For Appointment</h2>
+            <div class="container">
+                <form action="contact.php" method="post">
+                    <div class="elem-group">
+                        <label for="name">Your Name</label><br>
+                        <input type="text" id="name" name="visitor_name" placeholder="Jane Doe" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="email">Your E-mail</label><br>
+                        <input type="email" id="email" name="visitor_email" placeholder="jane.doe@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="department-selection">Appointment Type</label><br>
+                        <select id="department-selection" name="concerned_department" required>
+                            <optgroup>
+                                <option value="">Select One</option>
+                                <option value="massage">Deep-Tissue Massage</option>
+                                <option value="trauma">Trauma-Touch Therapy</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="elem-group">
+                        <label for="message">Your Message</label><br>
+                        <textarea id="message" name="visitor_message" placeholder="Please include a phone number and any additional information required for our introduction call." required></textarea>
+                    </div>
+                    <div class="center">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <footer>
+    <span><small>&copy; 2022 by 
+        <a href="">Natasha Moore</a>, All Rights Reserved
+    </span>
+    </footer>
+
+    <!-- "responsive" class to topnav when the user clicks on the icon -->
+
+    <script>
+    //manages mobile nav 
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }   
+    </script>
+
+</body>
+</html>
