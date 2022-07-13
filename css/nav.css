@@ -58,8 +58,21 @@
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
+
     .topnav {
         width: 81%;
+        float: right;
+        max-width: 50%;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    .topnav a {
+        float: right;
+    }
+
+    a.home {
+        display: none;
     }
 }
 

@@ -10,15 +10,18 @@ html {
     font-size: 1em;
     line-height: 1.5em;
     color: rgba(52, 27, 10, 0.895);
-    min-height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow: auto;
+}
+
+html, body {
+    min-height: 100%;
 }
 
 body {
-    min-height: 100%;
-    width: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -31,6 +34,12 @@ header {
 
 ::selection {
     color: #000; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 h1 {
@@ -49,10 +58,6 @@ h1.mobile {
 
 div.wrapper {
     background-color: transparent;
-    position: relative;
-    overflow: auto;
-    padding-bottom: 20px;
-    height: 100%;
 }
 
 p {
@@ -167,17 +172,22 @@ div.center {
 footer {
     clear: both;
     text-align: center;
-    position: absolute;
-    height: 20px;
+    height: 5%;
     width: 100%;
     color:  rgba(52, 27, 10, 0.509);
     font-size: .6em;
+    bottom: 0;
+}
+
+.footer_fix {
+    position: absolute;
 }
 
 /* --- Responsive Rules --- */
 
 /* MOBILE */
 @media all and (max-width:500px) {
+  
     html {
         background-image: url("../images/bg_mobile.jpg");
         width: 100%;
@@ -193,6 +203,7 @@ footer {
 
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
+   
     .mobile {
         display: none;
     }
@@ -200,8 +211,75 @@ footer {
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
+    
+    html {
+        width: 100%;
+        background-size:cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .landing {
+        background-image: url("../images/bg_desktop.jpg");
+    }
+
+    .secondary {
+        background-image: url("../images/bg_secondary.jpg");
+    }
+    
     .mobile {
         display: none;
+    }
+
+    header {
+        height: 10%;
+    }
+
+    div.wrapper {
+        min-height: 100%;
+    }
+
+    /* LANDING PAGE */
+
+    .logo {
+        float: left;
+        max-width: 50%;
+        position: absolute;
+        padding: 20px 20px;
+    }
+
+    .headline, .headline_btn {
+        margin-left: 45%;
+    }
+
+    .headline {
+        font-size: 5em;
+        padding: 10px 10px;
+        margin-top: 6%;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        font-size: 25px;
+        height: 80px;
+    }
+
+    /* ABOUT PAGE */
+
+    .headshot {
+        float: left;
+        max-width: 40%;
+    }
+
+    div.box {
+        max-width: 100%;
+        max-width: 100%;
+        margin: 5% 5%;
+        padding: 10px;
+    }
+
+    h3.sub {
+        padding: 10px;
     }
 
 }
